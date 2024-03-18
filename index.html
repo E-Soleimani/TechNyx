@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/x-icon" href="./assets/image/favicon.png" />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./swiper/swiper-bundle.min.css" />
     <title>TechNyx</title>
   </head>
   <body class="mx-auto max-w-[2000px]">
@@ -449,48 +450,96 @@
 
       <!-- Customers -->
       <section
-        class="customers relative mx-auto flex w-full flex-col items-center justify-center mobile:gap-y-10 mobile:py-6 tablet:gap-y-[60px] tablet:px-8 tablet:py-9 desktop:px-[135px] desktop:py-[65px]"
+        class="customers relative mx-auto flex w-full flex-col items-center justify-center px-4 mobile:gap-y-10 mobile:py-6 tablet:gap-y-[60px] tablet:px-8 tablet:py-9 desktop:px-[135px] desktop:py-[65px]"
       >
         <h2 class="text-[#00171F] tablet:text-2xl desktop:text-4xl">
           مشتریان ما
         </h2>
-        <div class="brands w-full">
-          <ul
-            class="flex flex-row-reverse items-center mobile:flex-wrap mobile:justify-center mobile:gap-x-4 mobile:gap-y-5 tablet:flex-nowrap tablet:justify-between tablet:gap-y-8 desktop:gap-x-[90px]"
-          >
-            <li class="mobile:w-[24%]">
+        <!-- Slider -->
+        <div class="swiper brands_slider h-14 w-full" dir="ltr">
+          <div class="swiper-wrapper">
+            <div
+              class="swiper-slide !flex items-center justify-center text-center text-lg"
+            >
               <a href="https://www.precor.com/" target="_blank"
-                ><img src="./assets/icon/brand1.svg" alt="brand"
+                ><img
+                  class="object-cover"
+                  src="./assets/icon/brand1.svg"
+                  alt="brand"
               /></a>
-            </li>
-            <li class="mobile:w-[24%]">
+            </div>
+            <div
+              class="swiper-slide !flex items-center justify-center text-center text-lg"
+            >
               <a href="https://www.google.com/" target="_blank"
-                ><img src="./assets/icon/brand2.svg" alt="brand"
+                ><img
+                  class="object-cover"
+                  src="./assets/icon/brand2.svg"
+                  alt="brand"
               /></a>
-            </li>
-            <li class="mobile:w-[24%]">
+            </div>
+            <div
+              class="swiper-slide !flex items-center justify-center text-center text-lg"
+            >
               <a href="https://www.airbnb.com/" target="_blank"
-                ><img src="./assets/icon/brand3.svg" alt="brand"
+                ><img
+                  class="object-cover"
+                  src="./assets/icon/brand3.svg"
+                  alt="brand"
               /></a>
-            </li>
-            <li class="mobile:w-[24%]">
+            </div>
+            <div
+              class="swiper-slide !flex items-center justify-center text-center text-lg"
+            >
               <a href="https://www.ubereats.com/" target="_blank"
-                ><img src="./assets/icon/brand4.svg" alt="brand"
+                ><img
+                  class="object-cover"
+                  src="./assets/icon/brand4.svg"
+                  alt="brand"
               /></a>
-            </li>
-            <li class="mobile:w-[24%]">
+            </div>
+            <div
+              class="swiper-slide !flex items-center justify-center text-center text-lg"
+            >
               <a href="https://www.amazon.com/" target="_blank"
-                ><img src="./assets/icon/brand5.svg" alt="brand"
+                ><img
+                  class="object-cover"
+                  src="./assets/icon/brand5.svg"
+                  alt="brand"
               /></a>
-            </li>
-          </ul>
+            </div>
+            <div
+              class="swiper-slide !flex items-center justify-center text-center text-lg"
+            >
+              <a href="https://www.precor.com/" target="_blank"
+                ><img
+                  class="object-cover"
+                  src="./assets/icon/brand1.svg"
+                  alt="brand"
+              /></a>
+            </div>
+            <div
+              class="swiper-slide !flex items-center justify-center text-center text-lg"
+            >
+              <a href="https://www.google.com/" target="_blank"
+                ><img
+                  class="object-cover"
+                  src="./assets/icon/brand2.svg"
+                  alt="brand"
+              /></a>
+            </div>
+          </div>
         </div>
+        <div class="swiper-pagination !-bottom-[2%]" dir="ltr"></div>
+        <!-- Slider!! -->
 
         <!-- Decorators -->
         <div class="decorator-right absolute right-0 top-0 -z-20">
           <img src="./assets/image/decorator3.png" alt="" />
         </div>
-        <div class="decorator-left absolute bottom-0 left-0 -z-20">
+        <div
+          class="decorator-left absolute bottom-0 left-0 -z-20 mobile:hidden tablet:block"
+        >
           <img src="./assets/image/decorator4.png" alt="" />
         </div>
         <!-- Decorators!! -->
@@ -1174,5 +1223,33 @@
     <!-- Script -->
     <script src="./assets/js/main.js"></script>
     <!-- Script!! -->
+
+    <!-- Swiper -->
+    <script src="./swiper/swiper-bundle.min.js"></script>
+    <script>
+      var swiper = new Swiper(".brands_slider", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1200: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        },
+      });
+    </script>
+    <!-- Swiper!! -->
   </body>
 </html>
