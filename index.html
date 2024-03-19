@@ -10,12 +10,12 @@
     <title>TechNyx</title>
   </head>
   <body class="mx-auto max-w-[2000px]">
-    <!-- Nav (Desktop) -->
+    <!-- Navbar (Desktop) -->
     <nav
-      class="sticky top-0 z-50 h-[150px] w-full items-center justify-between bg-white px-[135px] shadow-[0px_1px_10px_0px_rgba(0,0,0,0.6)] mobile:hidden desktop:flex"
+      class="navbar sticky top-0 z-50 h-[150px] w-full items-center justify-between bg-white px-[135px] shadow-[0px_1px_10px_0px_rgba(0,0,0,0.6)] mobile:hidden desktop:flex"
     >
       <div
-        class="nav_bar flex h-full w-full flex-row items-center justify-start gap-x-11"
+        class="flex h-full w-full flex-row items-center justify-start gap-x-11"
       >
         <div class="logo">
           <a href="./index.html"
@@ -58,10 +58,94 @@
         </div>
       </div>
       <div
-        class="phone_number flex h-[74px] w-[180px] flex-col items-center justify-center pb-[9px] pl-0.5 pr-0.5 pt-[9px]"
+        class="tel flex w-[175px] flex-row-reverse items-center justify-center gap-4 pb-[15px] pt-[15px]"
       >
         <div
-          class="flex w-[175px] flex-row-reverse items-center justify-center gap-4 pb-[15px] pt-[15px]"
+          class="flex h-[26px] w-[26px] flex-row items-center justify-center gap-2.5"
+        >
+          <img
+            class="h-6 w-6 overflow-visible"
+            src="./assets/icon/calling.svg"
+          />
+        </div>
+        <div class="flex flex-col items-start justify-start gap-[15px]">
+          <div class="font-y_regular text-primary">تلفن تماس</div>
+          <div class="font-y_regular text-primary">۰۹۳۷-۵۰۹۱۰۵۵</div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar (Desktop)!! -->
+
+    <!-- Navbar (Tablet & Mobile) -->
+    <nav
+      class="responsive_navbar sticky top-0 z-50 flex h-[74px] w-full flex-row-reverse flex-wrap items-center justify-between overflow-hidden bg-white shadow-[0px_1px_10px_0px_rgba(0,0,0,0.6)] mobile:px-4 desktop:hidden"
+    >
+      <button class="menu_btn duration-300 active:scale-90">
+        <img class="h-10" src="./assets/icon/menu.svg" alt="" />
+      </button>
+      <div class="logo">
+        <a href="./index.html"
+          ><img class="w-28" src="./assets/icon/logo1.svg" alt="logo"
+        /></a>
+      </div>
+    </nav>
+    <!-- Submenu -->
+    <div
+      class="submenu fixed -right-full top-0 z-50 h-screen w-full bg-[url('../image/submenu-bg.png')] bg-cover px-4 duration-200"
+    >
+      <div class="topside flex items-center justify-between py-8">
+        <div class="logo">
+          <img
+            class="mobile:w-14 tablet:w-16"
+            src="./assets/icon/logo3.svg"
+            alt=""
+          />
+        </div>
+        <div class="close_btn">
+          <img
+            class="cursor-pointer mobile:w-8 tablet:w-10"
+            src="./assets/icon/close-btn.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <div
+        class="navlink flex flex-col items-start justify-stretch border-b border-solid border-[rgba(38,100,163,0.22)] text-lg text-primary"
+      >
+        <a
+          href="#"
+          class="h-16 w-full rounded-md pr-2 leading-[64px] text-skyblue duration-200 hover:bg-primary"
+          >صفحه اصلی</a
+        >
+        <a
+          href="#"
+          class="h-16 w-full rounded-md pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
+          >اخبار و مقالات</a
+        >
+        <a
+          href="#"
+          class="h-16 w-full rounded-md pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
+          >آموزش</a
+        >
+        <a
+          href="#"
+          class="h-16 w-full rounded-md pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
+          >گالری تصاویر</a
+        >
+        <a
+          href="#"
+          class="h-16 w-full rounded-md pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
+          >سوالات متداول</a
+        >
+        <a
+          href="#"
+          class="h-16 w-full rounded-md pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
+          >درباره ما</a
+        >
+      </div>
+      <div class="bottom_side mt-6 w-full">
+        <div
+          class="tel mr-auto flex w-[175px] flex-row-reverse items-center justify-center gap-6 p-4"
         >
           <div
             class="flex h-[26px] w-[26px] flex-row items-center justify-center gap-2.5"
@@ -73,74 +157,15 @@
           </div>
           <div class="flex flex-col items-start justify-start gap-[15px]">
             <div class="font-y_regular text-primary">تلفن تماس</div>
-            <div class="font-y_regular text-primary">۰۹۳۷-۵۰۹۱۰۵۵</div>
+            <div class="font-y_regular text-primary [word-spacing:6px]">
+              ۰۹۳۷-۵۰۹۱۰۵۵
+            </div>
           </div>
         </div>
       </div>
-    </nav>
-    <!-- Nav (Desktop)!! -->
-
-    <!-- Nav (Tablet & Mobile) -->
-    <nav
-      class="side_nav sticky top-0 z-50 flex h-[74px] w-full flex-row-reverse flex-wrap items-center justify-between overflow-hidden bg-white shadow-[0px_1px_10px_0px_rgba(0,0,0,0.6)] mobile:px-4 desktop:hidden"
-    >
-      <div class="menu">
-        <button class="menu_bar duration-300 active:scale-90">
-          <img class="h-10" src="./assets/icon/menu.svg" alt="" />
-        </button>
-      </div>
-      <div class="logo">
-        <a href="./index.html"
-          ><img class="w-28" src="./assets/icon/logo1.svg" alt="logo"
-        /></a>
-      </div>
-    </nav>
-    <!-- Hide Menu -->
-    <div
-      class="hide_menu fixed -right-full top-0 z-50 h-screen w-full bg-white duration-200"
-    >
-      <div
-        class="navlink flex flex-col items-start justify-stretch text-lg text-primary"
-      >
-        <a
-          href="#"
-          class="h-16 w-full border-b border-solid border-gray-200 pr-2 leading-[64px] text-skyblue duration-200 hover:bg-primary"
-          >صفحه اصلی</a
-        >
-        <a
-          href="#"
-          class="h-16 w-full border-b border-solid border-gray-200 pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
-          >اخبار و مقالات</a
-        >
-        <a
-          href="#"
-          class="h-16 w-full border-b border-solid border-gray-200 pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
-          >آموزش</a
-        >
-        <a
-          href="#"
-          class="h-16 w-full border-b border-solid border-gray-200 pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
-          >گالری تصاویر</a
-        >
-        <a
-          href="#"
-          class="h-16 w-full border-b border-solid border-gray-200 pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
-          >سوالات متداول</a
-        >
-        <a
-          href="#"
-          class="h-16 w-full border-b border-solid border-gray-200 pr-2 leading-[64px] text-primary duration-200 hover:bg-primary hover:text-white"
-          >درباره ما</a
-        >
-      </div>
-      <div
-        class="close_bar absolute left-0 top-0 h-10 w-10 cursor-pointer rounded-sm bg-primary text-center text-5xl leading-[48px] text-white"
-      >
-        &times;
-      </div>
     </div>
-    <!-- Hide Menu!! -->
-    <!-- Nav (Tablet & Mobile)!! -->
+    <!-- Submenu!! -->
+    <!-- Navbar (Tablet & Mobile)!! -->
 
     <!-- Header -->
     <header class="w-full">
@@ -452,9 +477,34 @@
       <section
         class="customers relative mx-auto flex w-full flex-col items-center justify-center px-4 mobile:gap-y-10 mobile:py-6 tablet:gap-y-[60px] tablet:px-8 tablet:py-9 desktop:px-[135px] desktop:py-[65px]"
       >
-        <h2 class="text-[#00171F] tablet:text-2xl desktop:text-4xl">
-          مشتریان ما
-        </h2>
+        <div class="topic">
+          <h3
+            class="tablet:text-2xl desktop:text-[32px]"
+            style="
+              background: linear-gradient(
+                90deg,
+                rgba(3, 40, 63, 1) 0%,
+                rgba(8, 105, 165, 1) 68%
+              );
+              background-clip: text;
+              -webkit-background-clip: text;
+              -webkit-text-fill-color: transparent;
+            "
+          >
+            مشتریان ما
+          </h3>
+          <div
+            class="underline_ mt-2 h-1 w-full rounded-lg"
+            style="
+              background: linear-gradient(
+                90deg,
+                rgba(3, 40, 63, 1) 0%,
+                rgba(8, 105, 165, 1) 71%
+              );
+            "
+          ></div>
+        </div>
+
         <!-- Slider -->
         <div class="swiper brands_slider h-14 w-full" dir="ltr">
           <div class="swiper-wrapper">
@@ -530,7 +580,10 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination !-bottom-[2%]" dir="ltr"></div>
+        <div
+          class="swiper-pagination !-bottom-[2%] desktop:hidden"
+          dir="ltr"
+        ></div>
         <!-- Slider!! -->
 
         <!-- Decorators -->
@@ -1230,6 +1283,10 @@
       var swiper = new Swiper(".brands_slider", {
         slidesPerView: 1,
         spaceBetween: 10,
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
         pagination: {
           el: ".swiper-pagination",
           clickable: true,
