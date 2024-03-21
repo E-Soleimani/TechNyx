@@ -114,7 +114,7 @@
       >
         <a
           href="#"
-          class="h-16 w-full rounded-md pr-2 leading-[64px] text-skyblue "
+          class="h-16 w-full rounded-md pr-2 leading-[64px] text-skyblue"
           >صفحه اصلی</a
         >
         <a
@@ -145,17 +145,17 @@
       </div>
       <div class="bottom_side mt-6 w-full">
         <div
-          class="tel mr-auto flex w-[175px] flex-row-reverse items-center justify-center gap-6 p-4"
+          class="tel mx-auto flex w-auto flex-row items-center justify-center gap-4 p-4"
         >
           <div
             class="flex h-[26px] w-[26px] flex-row items-center justify-center gap-2.5"
           >
             <img
               class="h-6 w-6 overflow-visible"
-              src="./assets/icon/calling.svg"
+              src="./assets/icon/calling2.svg"
             />
           </div>
-          <div class="flex flex-col items-start justify-start gap-[15px]">
+          <div class="flex flex-row items-start justify-start gap-[15px]">
             <div class="font-y_regular text-primary">تلفن تماس</div>
             <div class="font-y_regular text-primary [word-spacing:6px]">
               ۰۹۳۷-۵۰۹۱۰۵۵
@@ -172,13 +172,13 @@
       <!-- Banner -->
       <section class="banner relative">
         <div
-          class="background w-full bg-[length:100%_100%] bg-no-repeat mobile:flex mobile:h-[220px] mobile:justify-center mobile:bg-[url('../image/banner2.png')] tablet:h-[350px] desktop:inline-block desktop:h-[600px] desktop:bg-[url('../image/banner.png')]"
+          class="background flex w-full bg-[length:100%_100%] bg-no-repeat mobile:h-[220px] mobile:justify-center mobile:bg-[url('../image/banner2.png')] tablet:h-[350px] desktop:h-[600px] desktop:justify-between desktop:bg-[url('../image/banner-bg.png')]"
         >
           <div
             class="description flex h-full flex-col justify-center gap-6 mobile:w-[267px] mobile:items-center tablet:w-[368px] desktop:mr-[42px] desktop:w-[32%] desktop:items-start"
           >
             <h2
-              class="leading-[50px] text-white mobile:text-center mobile:text-xl tablet:text-2xl desktop:text-right desktop:text-4xl"
+              class="text-white mobile:text-center mobile:text-xl tablet:text-2xl tablet:!leading-[50px] desktop:text-right desktop:text-4xl"
             >
               شرکت تکنیکس ارائه تخصصی خدمات
               <span class="text-skyblue">طراحی سایت</span>
@@ -195,6 +195,11 @@
               بیشتر بخوانید
             </a>
           </div>
+          <img
+            class="object-cover mobile:hidden desktop:inline-block"
+            src="./assets/image/banner-img.png"
+            alt=""
+          />
         </div>
       </section>
       <!-- Banner!! -->
@@ -293,10 +298,10 @@
 
       <!-- About Us -->
       <section
-        class="about_us flex w-full flex-row justify-between mobile:px-4 mobile:py-6 tablet:px-8 tablet:py-9 desktop:px-[135px] desktop:py-16"
+        class="about_us flex w-full justify-between mobile:flex-col-reverse mobile:items-center mobile:gap-y-6 mobile:px-4 mobile:py-6 tablet:flex-row tablet:px-8 tablet:py-9 desktop:px-[135px] desktop:py-16"
       >
         <div
-          class="right_side flex flex-col items-start justify-center mobile:gap-2 tablet:w-2/3 tablet:gap-6 desktop:w-2/5"
+          class="right_side flex flex-col justify-center mobile:w-full mobile:items-center mobile:gap-2 tablet:w-1/2 tablet:items-start tablet:gap-6 desktop:w-2/5"
         >
           <div class="topic">
             <h3
@@ -326,12 +331,12 @@
             ></div>
           </div>
           <h2
-            class="text-primary tablet:text-2xl tablet:leading-[50px] desktop:text-4xl"
+            class="text-primary mobile:text-center tablet:text-right tablet:text-2xl tablet:!leading-[50px] desktop:text-4xl"
           >
             طراحی و اجرای سایت ، طراحی و اجرای نرم افزار ،شبکه ، CEO .
           </h2>
           <p
-            class="text-secondary mobile:text-[8px] tablet:text-base tablet:leading-6 desktop:text-lg"
+            class="text-secondary mobile:text-center mobile:text-xs tablet:text-right tablet:text-base tablet:leading-6 desktop:text-lg"
           >
             از طراحی تا اجرا در کنار شما هستیم در این جلسه ما با کامپوننت ها در
             React Js آشنا خواهیم شد در این جلسه ما با کامپوننت ها در React Js
@@ -339,13 +344,24 @@
           </p>
           <a
             href="#"
-            class="rounded-lg bg-[#86B6F6] text-center text-primary duration-[400ms] hover:bg-[#003070] hover:text-white mobile:px-1.5 mobile:py-2 mobile:text-[10px] tablet:text-base desktop:mt-20 desktop:px-3.5 desktop:py-4 desktop:text-[23px]"
+            class="rounded-lg bg-[#86B6F6] text-center text-primary duration-[400ms] hover:bg-[#003070] hover:text-white mobile:px-1.5 mobile:py-2 mobile:text-[10px] tablet:text-base desktop:mt-6 desktop:px-3.5 desktop:py-4 desktop:text-[23px]"
           >
             بیشتر بخوانید
           </a>
         </div>
-        <div class="left_side">
-          <img class="h-full w-full" src="./assets/image/about_us.png" alt="" />
+        <div
+          class="left_side relative mobile:w-[70%] tablet:w-2/5 desktop:w-2/5"
+        >
+          <img
+            class="h-full w-full bg-left object-fill"
+            src="./assets/image/about-us1.png"
+            alt=""
+          />
+          <img
+            class="absolute bottom-5 w-1/2 rounded bg-white object-cover p-1.5 mobile:right-2 tablet:-right-8 desktop:-right-16"
+            src="./assets/image/about-us2.png"
+            alt=""
+          />
         </div>
       </section>
       <!-- About Us!! -->
@@ -969,16 +985,19 @@
           </a>
         </div>
         <div
-          class="image_container flex w-full flex-row items-start justify-center overflow-hidden mobile:flex-wrap mobile:gap-6 tablet:flex-nowrap tablet:gap-x-4 desktop:gap-x-[30px]"
+          class="image_container flex w-full justify-center overflow-hidden mobile:flex-col mobile:flex-wrap mobile:items-center mobile:gap-6 tablet:flex-row tablet:flex-nowrap tablet:items-start tablet:gap-x-4 desktop:gap-x-[30px]"
         >
-          <div class="image group relative h-full mobile:w-2/5 tablet:hidden">
+          <a
+            href="#"
+            class="image group relative h-full mobile:w-full tablet:w-1/3"
+          >
             <img
               class="w-full object-cover"
               src="./assets/image/pic1.png"
               alt=""
             />
             <div
-              class="shade absolute right-0 top-0 h-full w-full opacity-0 duration-[400ms] group-hover:opacity-100"
+              class="shade absolute right-0 top-0 h-full w-full opacity-0 duration-[400ms] tablet:group-hover:opacity-100"
             >
               <img
                 class="w-full object-cover"
@@ -995,40 +1014,18 @@
                 </h3>
               </div>
             </div>
-          </div>
-          <div class="image group relative h-full mobile:w-2/5 tablet:w-1/3">
-            <img
-              class="w-full object-cover"
-              src="./assets/image/pic1.png"
-              alt=""
-            />
-            <div
-              class="shade absolute right-0 top-0 h-full w-full opacity-0 duration-[400ms] group-hover:opacity-100"
-            >
-              <img
-                class="w-full object-cover"
-                src="./assets/image/pic-shade.png"
-                alt=""
-              />
-              <div
-                class="title absolute bottom-12 right-8 flex flex-row items-center justify-start gap-4"
-              >
-                <img src="./assets/icon/horizontal-line.svg" alt="" />
-                <h3 class="font-y_bold text-2xl text-white">
-                  سیستم<br />
-                  مدیریت اطلاعات
-                </h3>
-              </div>
-            </div>
-          </div>
-          <div class="image group relative h-full mobile:w-2/5 tablet:w-1/3">
+          </a>
+          <a
+            href="#"
+            class="image group relative h-full mobile:w-full tablet:w-1/3"
+          >
             <img
               class="w-full object-cover"
               src="./assets/image/pic2.png"
               alt=""
             />
             <div
-              class="shade absolute right-0 top-0 h-full w-full opacity-0 duration-[400ms] group-hover:opacity-100"
+              class="shade absolute right-0 top-0 h-full w-full opacity-0 duration-[400ms] tablet:group-hover:opacity-100"
             >
               <img
                 class="w-full object-cover"
@@ -1045,15 +1042,18 @@
                 </h3>
               </div>
             </div>
-          </div>
-          <div class="image group relative h-full mobile:w-2/5 tablet:w-1/3">
+          </a>
+          <a
+            href="#"
+            class="image group relative h-full mobile:w-full tablet:w-1/3"
+          >
             <img
               class="w-full object-cover"
               src="./assets/image/pic3.png"
               alt=""
             />
             <div
-              class="shade absolute right-0 top-0 h-full w-full opacity-0 duration-[400ms] group-hover:opacity-100"
+              class="shade absolute right-0 top-0 h-full w-full opacity-0 duration-[400ms] tablet:group-hover:opacity-100"
             >
               <img
                 class="w-full object-cover"
@@ -1070,7 +1070,7 @@
                 </h3>
               </div>
             </div>
-          </div>
+          </a>
         </div>
       </section>
       <!-- Images!! -->
@@ -1094,6 +1094,7 @@
               جلب رضایت کارفرمایان از طریق تامین خواسته های کیفی مدیران کنونی
               شرکت <span class="text-skyblue">تک نیکس</span> می‌باشد.
             </h3>
+            <!-- Social Media for Desktop -->
             <div class="social_media flex flex-row justify-start gap-x-2">
               <a href="#" class="group relative">
                 <img class="w-full" src="./assets/icon/instagram.svg" alt="" />
@@ -1120,6 +1121,7 @@
                 />
               </a>
             </div>
+            <!-- Social Media for Desktop -->
           </div>
           <div
             class="services w-[24%] flex-col justify-start gap-y-7 mobile:hidden desktop:flex"
@@ -1210,46 +1212,33 @@
             </div>
           </div>
         </div>
+        <!-- Social Media for Tablet & Mobile -->
         <div
-          class="social_media flex w-3/5 flex-row justify-center gap-x-[72px] py-5 [border-bottom:1px_solid_#2664A338] desktop:hidden"
+          class="social_media flex flex-row justify-center gap-x-[72px] py-5 [border-bottom:1px_solid_#2664A338] desktop:hidden"
         >
           <a href="#" class="group relative">
             <img
-              class="object-cover mobile:h-10 mobile:w-10 tablet:h-14 tablet:w-14"
+              class="h-10 object-cover tablet:h-14"
               src="./assets/icon/instagram.svg"
               alt=""
             />
-            <img
-              class="absolute right-0 top-0 w-full opacity-0 duration-200 group-hover:opacity-100"
-              src="./assets/icon/instagram-h.svg"
-              alt=""
-            />
           </a>
           <a href="#" class="group relative">
             <img
-              class="object-cover mobile:h-10 mobile:w-10 tablet:h-14 tablet:w-14"
+              class="h-10 object-cover tablet:h-14"
               src="./assets/icon/facebook.svg"
               alt=""
             />
-            <img
-              class="absolute right-0 top-0 w-full opacity-0 duration-200 group-hover:opacity-100"
-              src="./assets/icon/facebook-h.svg"
-              alt=""
-            />
           </a>
           <a href="#" class="group relative">
             <img
-              class="object-cover mobile:h-10 mobile:w-10 tablet:h-14 tablet:w-14"
+              class="h-10 object-cover tablet:h-14"
               src="./assets/icon/linkedin.svg"
-              alt=""
-            />
-            <img
-              class="absolute right-0 top-0 w-full opacity-0 duration-200 group-hover:opacity-100"
-              src="./assets/icon/linkedin-h.svg"
               alt=""
             />
           </a>
         </div>
+        <!-- Social Media for Tablet & Mobile!! -->
         <div
           class="bottom_side pt-8 text-primary mobile:text-sm tablet:text-lg"
         >
