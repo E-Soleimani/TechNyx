@@ -29,3 +29,16 @@
        font-family: iranyekan-medium;
     }
 }
+
+
+@layer components  {
+    .swiper-slide{
+    @apply !flex items-center justify-center text-center text-lg;
+    }
+}
+
+/* News Page: Banner Slider Pagination*/
+.banner_slider .swiper-pagination-bullet {
+    @apply w-6 h-1 rounded-sm;
+}
+/* News Page: Banner Slider Pagination!! */

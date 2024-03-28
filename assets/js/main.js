@@ -4,10 +4,8 @@ let close=document.querySelector(".submenu .close_btn");
 let menu=document.querySelector(".submenu")
 
 show.addEventListener("click",()=>{
-    menu.classList.remove("-right-full")
-    menu.classList.add("right-0")
+    menu.classList.toggle("right-0")
 });
 close.addEventListener("click",()=>{
     menu.classList.remove("right-0")
-    menu.classList.add("-right-full")
 })
